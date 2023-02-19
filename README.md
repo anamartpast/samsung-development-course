@@ -1,1 +1,1 @@
-# samsung-development-
+# samsung-development-course
