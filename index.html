@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+</head>
+
+<body>
+<div class="containerForm">
+    <form name="createAccountForm" onsubmit="onSubmit(event)">
+        <h1>Create Account</h1>
+        <div class="inputContainerForm">
+            <label for="name"> Nombre </label> <br>
+            <input onblur="checkName()" type="text" id="name" autocomplete="off"> <br>
+            <span id="name_msg"></span>
+        </div>
+        <div class="inputContainerForm">
+            <label for="email"> Email </label> <br>
+            <input onblur="checkEmail()" type="text" id="email" autocomplete="off"> <br>
+            <span id="email_msg"></span>
+        </div>
+        <div class="inputContainerForm">
+            <label for="password"> Clave </label> <br>
+            <input onblur="checkPassword()" type="password" id="password" autocomplete="off"> <br>
+            <span id="password_msg"></span>
+        </div>
+        <div class="inputContainerForm">
+            <label for="confirm_password"> Confirme su clave </label> <br>
+            <input onblur="checkConfirmationPassword()" type="password" id="confirm_password" autocomplete="off"> <br>
+            <span id="confirm_password_msg"></span>
+            <br>
+        </div>
+
+        <div class="buttonContainerForm">
+            <button class="button" type="submit" >ENVIAR</button>
+        </div>
+    </form>
+
+</div>
+</body>
+
+</html>
